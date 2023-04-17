@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Criação de objeto com chave/valor
+        const produto = new Object
+        produto.nome = 'Cadeira'
+        produto['marca produto'] = 'Genérica'
+        produto.preco = 200
+        console.log(produto)
+
+        delete produto.preco
+        delete produto['marca produto']
+        console.log(produto)
+
+        const carro = {
+            modelo: 'celta',
+            valor: 15000,
+            propietario: {
+                nome: 'Beatriz',
+                idade: 18,
+                endereço: {
+                    logradouro: 'Avenida Maceió',
+                    numero: 321,
+                },
+            },
+            condutores: [{
+                nome: 'Alana',
+                idade: 18
+            }, {
+                nome: 'Maria',
+                idade: 50
+            }
+            ],
+            calcularValorSeguro() {
+
+            }
+
+        
+        }
+        console.log(carro.propietario.nome)
+        console.log(carro.propietario.endereço.logradouro)
+        console.log(carro.condutores[1].nome)
+        console.log(carro.condutores.forEach((nome) =>{
+            console.log(nome.idade)
+        }))
+
+    </script>
+</body>
+
+</html>
