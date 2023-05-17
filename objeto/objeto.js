@@ -1,4 +1,4 @@
-//cóigo não executável
+//código não executável
 
 //precedural
 
